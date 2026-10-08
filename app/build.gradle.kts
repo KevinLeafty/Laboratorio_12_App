@@ -70,6 +70,8 @@ dependencies {
     implementation(libs.play.services.code.scanner)
     implementation(libs.mlkit.barcode.scanning)
     implementation(libs.kotlinx.coroutines.play.services)
+    testImplementation(libs.junit)
+    testImplementation(libs.okhttp.mockwebserver)
 
     // Hilt (Práctica 9): la librería, el generador de código, y su pieza para ViewModel
     implementation(libs.hilt.android)
