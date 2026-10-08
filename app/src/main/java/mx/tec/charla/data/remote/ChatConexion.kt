@@ -115,7 +115,6 @@ class ChatConexion(
         }
 
         override fun onFailure(webSocket: WebSocket, t: Throwable, response: Response?) {
-            if (webSocket !== actual) return
             if (response?.code == 403) {
                 // El servidor no reconoce el token. Reintentar no lo va a cambiar.
                 actual = null
